@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/bg-desktop.svg');
+}
+
+body, .container{
+  font-family: sans-serif;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container{
+  min-height: 100vh;
+  max-height: 150vh;
+  padding: 30px 100px;
+}
+
+.logo{
+  align-self: flex-start;
+  height: 50px;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-text{
+  height: 100%;
+  width: 45%;
+}
+
+.content-image{
+  width: 45%;
+}
+
+.content-text h2{
+  color: white;
+  line-height: 60px;
+  font-size: 47px;
+}
+
+.content-text p{
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: white;
+  font-weight: 200;
+}
+
+.content-text a{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.52);
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px 80px;
+  border-radius: 80px;
+  text-decoration: none;
+  background-color: white;
+  color: hsl(300, 69%, 71%);
+}
+
+.content-text a:hover{
+  transition: all 0.5s ease;
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.links{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.bi{
+  font-size: 20px;
+  padding: 10px;
+  margin: 0 10px;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  transition: all 0.1s ease-in;
+  justify-content: center;
+}
+
+.bi:hover{
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
