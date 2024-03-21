@@ -104,3 +104,42 @@ body, .container{
   color: hsl(300, 69%, 71%);
   border-color: hsl(300, 69%, 71%);
 }
+
+@media only screen and (max-width: 1023px){
+  body{
+    background-image: url('../images/bg-mobile.svg');
+  }
+
+  .container{
+    padding: 20px 30px;
+  }
+
+  .content{
+    flex-direction: column;
+  }
+
+  .content-image{
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .content-text{
+    text-align: center;
+    width: 100%;
+  }
+
+  .content-text h2{
+    margin-top: 20px;
+    line-height: 32px;
+    font-size: 32px;
+  }
+
+  .content-text a{
+    padding: 20px 100px;
+    margin-bottom: 100px;
+  }
+
+  .links{
+    justify-content: center;
+  }
+}
